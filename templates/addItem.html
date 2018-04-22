@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-3">
+    <div class="col-2"></div>
+      <div class="col border shadow p-3 mb-5 bg-white rounded">
+      <form action="{{url_for('addItem')}}" method = 'POST'>
+
+       	<div class="item-input">
+          	<label for="formGroupExampleInput">Item Name: </label>
+          	<input type="text" class="form-control" id="item-input" placeholder="Item Name">
+      	</div>
+          <div class="form-group">
+          	<label for="item-description">Item Description: </label>
+          	<input type="text" class="form-control" id="item-description" placeholder="Description">
+        	</div>
+      	<div class="form-group">
+          	<label for="category-selection">Select Sport: </label>
+          	<select class="form-control" id="category-selection">
+            		<option value="#">Select Sport</option>
+            		<option value="3">Baseball</option>
+            		<option value="4">Tennis</option>      
+          	</select>
+       	</div>
+       	<button type="submit" class="btn btn-secondary text-info">Add</button>
+       
+      </form>
+    </div>
+    <div class="col-2"></div>
+  </div>
+</div>
+
+<form action= "{{url_for('addItem')}}" method = 'POST'>
+
+<p>Item Name:</p>
+<input type = 'text' size='30' name = 'name' placeholder = 'Item'><br><br>
+<input type = 'text' size='100' name = 'description' placeholder = 'Item Description'><br><br>
+ <select name="Sport">
+   <option value="#">Select</option>
+   <option value="3">Baseball</option>
+   <option value="4">Tennis</option>   
+ </select>
+<input type='submit' value='Add'>
+</form>
+
+</body>
+</html>

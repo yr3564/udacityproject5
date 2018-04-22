@@ -19,24 +19,24 @@
 		<div class="row">			
 			<div class="col-2"></div>
 			<div class="col-8 border shadow p-3 mt-5 mb-5 bg-white rounded">
-				<form action="{{url_for('editItem',sportItem_id=sportItem_id)}}" method ='POST'>
-				 	<div class="form-group ">
-				    	<label for="edit-item-name">Edit Item Name: </label>
+				<form action="{{url_for('editItem',sportItem_id=sportItem_id)}}" method = "POST" role="form" novalidate="">
+				 	<div class="form-group">
+				    	<label for="edit-item-name">Edit Item Name:</label>
 				    	<input type="text" size="30" class="form-control" id="edit-item-input" placeholder="Item Name">
 					</div>
 				    <div class="form-group">
-				    	<label for="item-description">Item Description: </label>
+				    	<label for="edit-item-description">Item Description:</label>
 				    	<input type="text" size="100" class="form-control" id="edit-item-description" placeholder="Description">
 				  	</div>
 					<div class="form-group">
-				    	<label for="edit-category-selection">Select Sport: </label>
-				    	<select class="form-control" id="category-selection">
+				    	<label for="edit-category-selection">Select Sport:</label>
+				    	<select class="form-control" id="edit-category-selection">
 				      		<option value="#">Select Sport</option>
 				      		<option value="3">Baseball</option>
 				      		<option value="4">Tennis</option>      
 				    	</select>
 				 	</div>				 		
-				 		<button type="submit" class="btn btn-secondary text-info">Edit</button>				 	
+				 		<button type="submit" class="btn btn-secondary text-info" value="Edit">Edit</button>				 	
 				</form>
 			</div>
 			<div class="col-2"></div>
