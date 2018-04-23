@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row shadow-lg p-3 mt-5 mb-5 bg-white rounded">
+			<div class="col border">
+				<div class=" col justify-content-lg-center">	
+					<form action= "{{url_for('deletedItem',sportItem_id=sportItem_id)}}" method = 'POST'>
+						<h1>Delete Item:</h1>
+						<h2>Are you sure you want to delete: {{deleteItem.name}}?</h2>
+						<button type="submit" class="btn btn-secondary text-info mb-2">Delete</button>						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

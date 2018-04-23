@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<div class="row d-flex justify-content-end mt-3">
+			<div class="d-flex flex-row-reverse bd-highlight">
+				<a href="{{url_for('showLogin')}}"," class="btn btn-secondary btn-lg active light text-info" role="button" aria-pressed="true">Login</a>		
+			</div>
+		</div>
+		<div class="row align-items-center mt-5">
+			<div class="col align-self-center border border shadow p-3 mb-5 bg-white rounded">
+				<div class=" col border shadow-none bg-light">	
+					<h1>Item Description</h1>
+						<h2>{{item_descriptions.name}}</h2>
+						<p class ="lead">{{item_descriptions.description}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
